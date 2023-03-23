@@ -26,4 +26,9 @@ public class EmpService {
 		
 		return empinterface.findAll();
 	}
+
+	public void deleteemp(int id) {
+		
+		empinterface.deleteById(id);
+	}
 }
