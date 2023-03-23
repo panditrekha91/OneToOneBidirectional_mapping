@@ -1,5 +1,7 @@
 package onetooneBidirectional_mapping.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -18,5 +20,10 @@ public class EmpService {
 		Employee obj=empinterface.save(e);
 		return obj;
 		
+	}
+
+	public List<Employee> getAllemp() {
+		
+		return empinterface.findAll();
 	}
 }
